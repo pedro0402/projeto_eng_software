@@ -4,14 +4,15 @@ from PIL import Image
 
 # Cria a janela principal da aplicação
 app = CTk()
+app.configure(bg="black")
 app.geometry("600x480")  # Define o tamanho da janela
 app.resizable(0, 0)      # Torna a janela não redimensionável
 
 # Carrega as imagens
-side_img_data = Image.open("side-img.webp")
-email_icon_data = Image.open("email-icon.webp")
-password_icon_data = Image.open("password-icon.webp")
-google_icon_data = Image.open("google-icon.webp")
+side_img_data = Image.open("imagens/side-img.webp")
+email_icon_data = Image.open("imagens/email-icon.webp")
+password_icon_data = Image.open("imagens/password-icon.webp")
+google_icon_data = Image.open("imagens/google-icon.webp")
 
 # Cria instâncias CTkImage para cada imagem
 side_img = CTkImage(dark_image=side_img_data, light_image=side_img_data, size=(300, 480))
